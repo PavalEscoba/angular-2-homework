@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>	
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/angular.min.js"></script>
+
+</head>
+<body ng-app="myApp">
+	<div class="container" ng-controller="stringController">
+		<div class="field">
+			<label for="string">Please enter a <strong>string</strong>:</label><br>
+			<input type="text" id="string" name="string" value="" placeholder="Enter any valid string" ng-model="string"><br>
+			<label for="number">Please enter a <strong>number</strong>:</label><br>
+			<input type="number" id="number" name="number" value="" placeholder="Enter a valid number" ng-model="number">
+			<button class="button" ng-click="cuting()">Click to cut</button>
+		</div>
+		<div class="result">The cutted result is:
+			<span class="output">{{result}}</span>
+		</div>
+	</div>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/stringController.js"></script>
+</body>
+</html>
+<!-- <div class="container">
+		<label for="string">Enter string</label><br>
+		<input type="text" id="string" value=""><br>
+		<label for="number">Enter number</label><br>
+		<input type="number" id="number" value=""><br>
+		<button class="btn">Do IT!</button>
+		<div class="result">
+			The result is: <span class="output"></span>
+		</div>
+	</div> -->
